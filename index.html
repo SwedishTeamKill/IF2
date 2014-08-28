@@ -4,14 +4,17 @@
         
             var age = prompt("Age: ");
             var film;
+            var gender = prompt("Gender: ");
             
             if (age < 7){
-                film = "Pettsson och Findus";
-            }
+                if(gender == "male"){
+                        film = "Pettsson och Findus";
+                    }else{
+                        film = "Bambi is a fgt";
+                    }         
             else if (age < 14){
                 film = "Frost";
-            }
-            else{
+            }else{
                 film = "Sjunde inseglet";
             }
             if (age < 21){
@@ -21,7 +24,7 @@
                 film = "agdfhafad";
             }
             if (age > 7){
-                film = "Texas Chainsaw"
+                film = "Texas Chainsaw";
             }
             
             alert("Reccomended Movie: " + film);
